@@ -1,0 +1,166 @@
+/* ===============================
+   Cast Radio Web Legal Pages
+   Matching Mobile App Theme
+   =============================== */
+
+:root {
+  --bg-light: #e6e0cf;
+  --text-light: #1f1f1f;
+  --accent-light: #5b5a48;
+
+  --bg-dark: #3f544a;
+  --text-dark: #e6e6e6;
+  --accent-dark: #bfc6c1;
+
+  --card-radius: 12px;
+}
+
+/* Body */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.65;
+  margin: 0;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: var(--bg-light);
+  color: var(--text-light);
+
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Headings */
+
+h1 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+h2 {
+  margin-top: 28px;
+  font-weight: 500;
+}
+
+/* Links */
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Top bar */
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+}
+
+/* Buttons */
+
+button {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  padding: 6px 10px;
+  margin-left: 6px;
+  border-radius: 8px;
+
+  background: rgba(0,0,0,0.08);
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: rgba(0,0,0,0.18);
+}
+
+/* Sections */
+
+p {
+  margin-bottom: 14px;
+}
+
+/* Divider */
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  margin: 30px 0;
+}
+
+/* ===============================
+   DARK MODE
+   =============================== */
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark button {
+  background: rgba(255,255,255,0.1);
+}
+
+body.dark button:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+body.dark hr {
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 24px 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+}
+
+/* ===============================
+   PRINT
+   =============================== */
+
+@media print {
+
+  body {
+    background: white !important;
+    color: black !important;
+    padding: 0;
+  }
+
+  .top-bar,
+  button {
+    display: none !important;
+  }
+
+  a {
+    color: black;
+  }
+
+}
