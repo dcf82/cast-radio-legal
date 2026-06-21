@@ -4,13 +4,13 @@
    =============================== */
 
 :root {
-  --bg-light: #e6e0cf;
-  --text-light: #1f1f1f;
-  --accent-light: #5b5a48;
+  --bg-light: #e6e3cf;
+  --text-light: #1d1c0e;
+  --accent-light: #605f4d;
 
-  --bg-dark: #3f544a;
-  --text-dark: #e6e6e6;
-  --accent-dark: #bfc6c1;
+  --bg-dark: #354b45;
+  --text-dark: #cfe8e1;
+  --accent-dark: #b3ccc5;
 
   --card-radius: 12px;
 }
